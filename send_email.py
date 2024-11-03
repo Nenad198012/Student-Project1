@@ -7,7 +7,7 @@ def send_email(message):
     host = 'smtp.gmail.com'
     port = 465
     user_name = 'nenad.rosoman@gmail.com'
-    password = 'bbxqirltgzbaxghn'
+    password = ''
     context = ssl.create_default_context()
     receiver = 'nenad.andonov@yahoo.com'
 
@@ -16,4 +16,3 @@ def send_email(message):
         server.sendmail(user_name, receiver, message)
 
 
-print(os.getenv('PASSWORD'))
